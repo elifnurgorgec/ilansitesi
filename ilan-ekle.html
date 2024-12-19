@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İlan Ekle</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("ilanForm");
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Formun varsayılan gönderim davranışını engeller
+                alert("İlan başarılı bir şekilde eklendi!");
+                form.reset(); // Formu sıfırlar
+            });
+        });
+    </script>
 </head>
 <body>
     <header>

@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const contactForm = document.getElementById("contactForm");
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault(); // Formun varsayılan gönderim davranışını engeller
+                alert("Bilgileriniz alınmıştır, sizinle iletişime geçeceğiz.");
+                contactForm.reset(); // Formu sıfırlar
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
