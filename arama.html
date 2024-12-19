@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="ilanlar.html">İlanlar</a></li>
+                <li><a href="arama.html" class="active">Arama</a></li>
+                <li><a href="ilan-ekle.html">İlan Ekle</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Arama Yap</h1>
+        <form action="/arama-sonuc" method="GET">
+            <label for="search">Aradığınız araba modeli veya ilanı:</label>
+            <input type="text" id="search" name="query" placeholder="Ürün veya ilan arayın..." required>
+            <button type="submit">Ara</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 İlan ve Satış Web Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

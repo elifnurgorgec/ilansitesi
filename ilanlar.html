@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlanlar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="ilanlar.html">İlanlar</a></li>
+                <li><a href="arama.html">Arama</a></li>
+                <li><a href="ilan-ekle.html">İlan Ekle</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>İlanlar</h1>
+        <p>Burada ilanlar listelenecek.</p>
+        <div class="ilan-listesi">
+            <!-- İlan 1 -->
+            <div class="ilan">
+                <img src="audı.jpg" alt="İlan Resmi 1">
+                <div class="ilan-detay">
+                    <h2>Audi</h2>
+                    <p>Audi, modern tasarımı, sofistike iç mekanları ve yüksek teknoloji özellikleriyle bilinir. “Vorsprung durch Technik” (Teknoloji ile bir adım önde) sloganıyla kaliteyi ve yeniliği birleştirir. Sedan, SUV ve spor otomobil modelleriyle Audi, hem şık bir görünüm hem de dinamik sürüş deneyimi sunar. Güçlü motorları ve dört çeker teknolojisiyle, her yolculukta güven ve keyfi bir arada yaşatır.</p>
+                </div>
+            </div>
+
+            <!-- İlan 2 -->
+            <div class="ilan">
+                <img src="ferrari.jpg" alt="İlan Resmi 2">
+                <div class="ilan-detay">
+                    <h2>Ferrari</h2>
+                    <p>Dünyanın en prestijli spor otomobil markalarından biri olan Ferrari, yüksek performansı ve zarif tasarımıyla otomobil tutkunlarının hayallerini süslüyor. Her modeli, İtalyan mühendisliğinin ve estetik anlayışının zirvesini temsil eder. Sürüş keyfini en üst düzeye çıkaran Ferrari, hız, lüks ve şıklığı bir arada sunar. Efsanevi kırmızı rengi ve Ferrari logosu, performansın ve zarafetin simgesidir.
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- İlan 3 -->
+            <div class="ilan">
+                <img src="mercedes.jpg" alt="İlan Resmi 3">
+                <div class="ilan-detay">
+                    <h2>Mercedes-Benz</h2>
+                    <p>Alman mühendisliğinin mükemmelliğini temsil eden Mercedes-Benz, yenilikçi teknolojileri ve üstün konfor özellikleriyle bilinir. Sedan, SUV, coupe ve spor otomobil seçenekleriyle her zevke hitap eder. Lüks iç tasarımı, güvenlik standartları ve etkileyici performansıyla Mercedes-Benz, hem prestij hem de konfor arayanların birinci tercihidir.</p>
+                </div>
+            </div>
+            <div class="ilan">
+                <img src="tesla.jpg" alt="ilan resmi 4">
+                <div class="ilan-detay">
+                    <h2>Tesla</h2>
+                    <p>Elektrikli otomobil devriminin öncüsü Tesla, çevre dostu teknolojileri yenilikçi tasarımlarla birleştiriyor. Performans odaklı elektrikli araçları, üstün menzili ve gelişmiş otonom sürüş özellikleriyle dikkat çeker. Tesla'nın modern tasarımı ve sıfır emisyonlu motorları, sürdürülebilir bir gelecek için otomobil sektöründe devrim yaratıyor.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 İlan ve Satış Web Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
+<style>
+    .ilan-listesi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ilan {
+    background-color: #fff;
+    margin: 20px;
+    padding: 15px;
+    width: 30%; /* İlanlar 3 eşit kolonda sıralanacak */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ilan img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.ilan-detay h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.ilan-detay p {
+    color: #555;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+</style>
