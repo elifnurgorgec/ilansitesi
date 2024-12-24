@@ -6,14 +6,11 @@
     <title>Arama</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.getElementById("ilanForm");
-            form.addEventListener("submit", function(event) {
-                event.preventDefault(); // Formun varsayılan gönderim davranışını engeller
-                alert("arama yapıldı!");
-                form.reset(); // Formu sıfırlar
-            });
-        });
+        function showSearchPopup(event) {
+            event.preventDefault(); // Formun varsayılan davranışını engelle
+            alert("Arama başarılı! Sonuçlar gösteriliyor.");
+            document.querySelector('form').submit(); // Formu gönder
+        }
     </script>
 </head>
 <body>
@@ -30,7 +27,7 @@
     </header>
     <main>
         <h1>Arama Yap</h1>
-        <form action="/arama-sonuc" method="GET">
+        <form action="/arama-sonuc" method="GET" onsubmit="showSearchPopup(event)">
             <label for="search">Aradığınız araba modeli veya ilanı:</label>
             <input type="text" id="search" name="query" placeholder="Ürün veya ilan arayın..." required>
             <button type="submit">Ara</button>
